@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+<h3>Rachel's</h3>
+<h1>Prime # Tester</h1>
+<p id="demo"></p>
+<input type="text" id="myText" value="">
+<button onclick="myFunction()">Calculate</button>
+<button onclick="clearFunction()">Clear Text</button>
+<button onclick="pineappleFunction()">Pineapple Button</button>
+<p id="pr"></p>
+</body>
+
+<script type="text/javascript">
+var i = 2;
+if (i < 5) {
+document.getElementById("demo").innerHTML = "Enter a number in the box below to test if it is prime.";
+}
+function isPrime(n) {
+    var i;
+    for (i = 2; i <= Math.sqrt(n); i++) { 
+        if (n % i == 0) {
+            return "Not a prime number";
+        }      
+    }
+    return "Prime number!";
+    
+}
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  var prime = isPrime(x);
+  document.getElementById("pr").innerHTML = prime;
+}
+function clearFunction() {
+  document.getElementById("pr").innerHTML = " ";
+}
+function pineappleFunction() {
+  document.getElementById("pr").innerHTML = "🍍";
+  }
+</script>
+</html>
+<!DOCTYPE html>
+
