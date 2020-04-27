@@ -3,20 +3,25 @@
 <body>
 <h3>Rachel's</h3>
 <h1>Prime # Tester</h1>
+    
 <p id="demo"></p>
+    
 <input type="text" id="myText" value="">
+    
 <button onclick="myFunction()">Calculate</button>
+    
 <button onclick="clearFunction()">Clear Text</button>
-<button onclick="pineappleFunction()">Pineapple Button</button>
+    
 <p id="pr"></p>
 </body>
 
 <script type="text/javascript">
 var i = 2;
 if (i < 5) {
-document.getElementById("demo").innerHTML = "Enter a number in the box below to test if it is prime.";
+document.getElementById("demo").innerHTML = "Enter a number in the box below to test if it is prime.";   
 }
-function isPrime(n) {
+
+    function isPrime(n) {
     var i;
     for (i = 2; i <= Math.sqrt(n); i++) { 
         if (n % i == 0) {
@@ -34,10 +39,20 @@ function myFunction() {
 function clearFunction() {
   document.getElementById("pr").innerHTML = " ";
 }
-function pineappleFunction() {
-  document.getElementById("pr").innerHTML = "🍍";
-  }
+ 
+    
 </script>
+    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">random number</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * ((max + 1) - min)) + min;
+}
+</script>
+   
+    
 </html>
 <!DOCTYPE html>
 
