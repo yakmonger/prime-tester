@@ -49,6 +49,23 @@ function clearFunction() {
 <script>
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * ((max + 1) - min)) + min;
+     
+    <button onclick="randFunction()">Calculate random</button>
+    
+    function prime(n) {
+    var i;
+    for (i = 2; i <= Math.sqrt(n); i++) { 
+        if (n % i == 0) {
+            return "Not a prime number";
+        }      
+    }
+    return "Prime number!";
+         
+         function randFunction() {
+  var x = document.getElementById('demo').innerHTML = getRndInteger(0,10);
+  var prime = isPrime(x);
+  document.getElementById("pr").innerHTML = prime;
+}
 }
 </script>
    
