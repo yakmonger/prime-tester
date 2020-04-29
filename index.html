@@ -4,7 +4,7 @@
 <h3>Rachel's</h3>
 <h1>Prime # Tester</h1>
     
-<p id="d"></p>
+<p id="demo"></p>
     
 <input type="text" id="myText" value="">
     
@@ -18,7 +18,7 @@
 <script type="text/javascript">
 var i = 2;
 if (i < 5) {
-document.getElementById("d").innerHTML = "Enter a number in the box below to test if it is prime.";   
+document.getElementById("demo").innerHTML = "Enter a number in the box below to test if it is prime.";   
 }
 
     function isPrime(n) {
@@ -40,9 +40,9 @@ function clearFunction() {
   document.getElementById("pr").innerHTML = " ";
 }
  
-  
     
-<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">random number</button>
+</script>
+    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">random number</button>
 
 <p id="demo"></p>
 
@@ -55,4 +55,3 @@ function getRndInteger(min, max) {
     
 </html>
 <!DOCTYPE html>
-
