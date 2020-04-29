@@ -32,7 +32,9 @@ document.getElementById("d").innerHTML = "Enter a number in the box below to tes
     
 }
 function myFunction() {
-  var x = document.getElementById("myText").value;
+  var x = function getRndInteger(min, max) {
+  return Math.floor(Math.random() * ((max + 1) - min)) + min;
+}
   var prime = isPrime(x);
   document.getElementById("pr").innerHTML = prime;
 }
