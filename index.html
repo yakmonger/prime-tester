@@ -3,25 +3,20 @@
 <body>
 <h3>Rachel's</h3>
 <h1>Prime # Tester</h1>
-    
-<p id="d"></p>
-    
+<p id="demo"></p>
 <input type="text" id="myText" value="">
-    
-<button onclick="calcPrime()">Calculate</button>
-    
+<button onclick="myFunction()">Calculate</button>
 <button onclick="clearFunction()">Clear Text</button>
-    
+
 <p id="pr"></p>
 </body>
 
 <script type="text/javascript">
 var i = 2;
 if (i < 5) {
-document.getElementById("d").innerHTML = "Enter a number in the box below to test if it is prime.";   
+document.getElementById("demo").innerHTML = "Enter a number in the box below to test if it is prime.";
 }
-
-    function isPrime(n) {
+function isPrime(n) {
     var i;
     for (i = 2; i <= Math.sqrt(n); i++) { 
         if (n % i == 0) {
@@ -29,30 +24,17 @@ document.getElementById("d").innerHTML = "Enter a number in the box below to tes
         }      
     }
     return "Prime number!";
-    
+
 }
-function calcPrime() {
- var x = document.getElementById("myText").value;
-}
+function myFunction() {
+  var x = document.getElementById("myText").value;
   var prime = isPrime(x);
   document.getElementById("pr").innerHTML = prime;
 }
 function clearFunction() {
   document.getElementById("pr").innerHTML = " ";
 }
- 
-    
-</script>
-    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">random number</button>
 
-<p id="demo"></p>
-
-<script>
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * ((max + 1) - min)) + min;
-}
 </script>
-   
-    
 </html>
 <!DOCTYPE html>
